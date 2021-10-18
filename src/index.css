@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(173, 169, 169);
+}
+
+.App {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(247, 243, 243);
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: rgb(194, 15, 15);
+}
+
+.display {
+    padding: 28px;
+    text-align: right;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.display span {
+    font-size: 14px;
+    color: rgb(250, 244, 244);
+}
+
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    color: rgb(248, 244, 244);
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.operators {
+    display: flex;
+}
+
+.operators button {
+    flex: 1 1 0%;
+    background-color: rgb(126, 13, 13);
+    font-weight: 700;
+}
+
+.digits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.digits button {
+    flex: 1 1 33.333%;
+    max-width: 33.333%;
+    background-color: rgb(21, 22, 21);
+}
